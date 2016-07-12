@@ -67,7 +67,7 @@
         </div>
         <div class="section">
             <h2>What's next?</h2>
-            <p>Make changes to this website by editing the files inside <code>www/</code> of your repository.</p>
+            <p>Make changes to this website by editing the files inside <code>app/public</code> of your repository.</p>
             <p>Commit your changes after, then push to the remote repository.</p>
             <pre><code>$ git commit -a -m "Some commit message"
 $ git push origin master</code></pre>

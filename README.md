@@ -8,14 +8,14 @@ Nginx 1.9 with PHP 7.0 on OpenShift.
 ## Installation
 
 ### Web Console
-<a href="https://openshift.redhat.com/app/console/application_type/custom?cartridges%5B%5D=http://cartreflect-claytondev.rhcloud.com/github/pinodex/openshift-cartridge-nginx-php7&amp;name=php"><img alt="Run+PHP+7+on+OpenShift" src="https://launch-shifter.rhcloud.com/launch/light/Run%20PHP%207%20on.svg" /></a>
+<a href="https://openshift.redhat.com/app/console/application_type/custom?cartridges%5B%5D=http://cartreflect-claytondev.rhcloud.com/github/limatheus/openshift-cartridge-nginx-php7&amp;name=php"><img alt="Run+PHP+7+on+OpenShift" src="https://launch-shifter.rhcloud.com/launch/light/Run%20PHP%207%20on.svg" /></a>
 
-Alternatively, you can use this [cartridge definition](http://cartreflect-claytondev.rhcloud.com/github/pinodex/openshift-cartridge-nginx-php7) on application creation page.
+Alternatively, you can use this [cartridge definition](http://cartreflect-claytondev.rhcloud.com/github/limatheus/openshift-cartridge-nginx-php7) on application creation page.
 
 
 ### Command Line
 ```
-rhc app create appname http://cartreflect-claytondev.rhcloud.com/github/pinodex/openshift-cartridge-nginx-php7
+rhc app create appname http://cartreflect-claytondev.rhcloud.com/github/limatheus/openshift-cartridge-nginx-php7
 ```
 
 ## Updates
@@ -44,7 +44,7 @@ Nginx will automatically include `config/nginx.d/*.conf` files. `.conf.erb` file
 PHP-FPM will automatically load `config/php.d/*.ini` files. `.ini.erb` files will be parsed and included also.
 
 ## Website
-The web root directory is `www/`. Make changes to your website there, then commit and push.
+The web root directory is `app/public/`. Make changes to your website there, then commit and push.
 
 ## Scripts
 This cartridge comes with different scripts for easy management of your app inside SSH.
